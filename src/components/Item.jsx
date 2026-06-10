@@ -1,15 +1,19 @@
-import { Link } from "react-router"
+import { Link } from 'react-router'
+import './Item.css'
 
-export default function Item( {title, img, price, id}) {
-
-    return (
-        <div style={{ border: "solid 1px white", borderRadius: 8, padding: 8}}>
-            <h3>{title}</h3>
-            <img width="250" src={img} />
-            <p>{price}</p>
-            <Link to={ `/product/${id}`}>
-                <button>Ver producto</button>
-            </Link>
-        </div>
-    )
+export default function Item({ title, img, price, id }) {
+  return (
+    <div className="product-card">
+      <div className="product-card__img-wrap">
+        <img src={img} alt={title} />
+      </div>
+      <div className="product-card__body">
+        <h3 className="product-card__title">{title}</h3>
+        <p className="product-card__price">{price}</p>
+        <Link to={`/product/${id}`}>
+          <button className="btn-primary">Ver producto</button>
+        </Link>
+      </div>
+    </div>
+  )
 }

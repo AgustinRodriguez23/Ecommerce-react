@@ -1,25 +1,18 @@
 import CartWidget from './CartWidget'
 import { NavLink } from 'react-router'
-export default function NavBar(){
+import './NavBar.css'
 
-    return (
-        <nav style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', top: 0, width: '100%', alignItems: 'center'}}>
-            <h2>AllBarberShop</h2>
-            <ul style={{display: 'flex', flexDirection: 'row', gap: 25}}>
-                <li style={{listStyleType: 'none'}}>
-                    <NavLink style={{color: 'white'}} to="/">INICIO</NavLink>
-                    </li>
-                <li style={{listStyleType: 'none'}}>
-                    <NavLink style={{color: 'white'}} to="/category/clipper">Clippers</NavLink>
-                    </li>
-                <li style={{listStyleType: 'none'}}>
-                    <NavLink style={{color: 'white'}} to="/category/trimmer">Trimmers</NavLink>
-                    </li>
-                <li style={{listStyleType: 'none'}}>
-                    <NavLink style={{color: 'white'}} to="/category/shaver">Shavers</NavLink>
-                    </li>        
-            </ul>
-            <CartWidget></CartWidget>
-        </nav>
-    )
+export default function NavBar() {
+  return (
+    <nav className="navbar">
+      <h2 className="navbar__brand">AllBarberShop</h2>
+      <ul className="navbar__links">
+        <li><NavLink to="/">Inicio</NavLink></li>
+        <li><NavLink to="/category/clipper">Clippers</NavLink></li>
+        <li><NavLink to="/category/trimmer">Trimmers</NavLink></li>
+        <li><NavLink to="/category/shaver">Shavers</NavLink></li>
+      </ul>
+      <CartWidget />
+    </nav>
+  )
 }

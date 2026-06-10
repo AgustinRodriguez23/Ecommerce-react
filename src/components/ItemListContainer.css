@@ -1,0 +1,73 @@
+/* ============================================
+   ItemListContainer.css — Catálogo de productos
+   ============================================ */
+
+.catalog {
+  padding: 2rem 0;
+}
+
+.catalog__header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.catalog__title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.catalog__subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-top: 0.4rem;
+}
+
+.catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Loading state */
+.catalog__loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem 0;
+  color: var(--color-text-muted);
+}
+
+.spinner {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 480px) {
+  .catalog__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .catalog__title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .catalog__grid {
+    grid-template-columns: 1fr;
+  }
+}

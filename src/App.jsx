@@ -6,23 +6,21 @@ import ItemDetailContainer from './components/ItemDetailContainer'
 import { CartProvider } from './context/cartContext'
 import CartContainer from './components/CartContainer'
 
-
-
-
 function App() {
-
   return (
     <BrowserRouter>
       <CartProvider>
         <header>
-          <NavBar></NavBar>
+          <NavBar />
         </header>
-        <Routes>
-          <Route index element= {<ItemListContainer/>}/>
-          <Route path="/product/:itemID" element= {<ItemDetailContainer/>}/>
-          <Route path="/category/:categoryID" element= {<ItemListContainer/>}/>
-          <Route path="/cart" element= {<CartContainer/>}/>
-        </Routes>
+        <main>
+          <Routes>
+            <Route index element={<ItemListContainer />} />
+            <Route path="/product/:itemID" element={<ItemDetailContainer />} />
+            <Route path="/category/:categoryID" element={<ItemListContainer />} />
+            <Route path="/cart" element={<CartContainer />} />
+          </Routes>
+        </main>
       </CartProvider>
     </BrowserRouter>
   )

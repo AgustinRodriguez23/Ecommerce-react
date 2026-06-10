@@ -1,0 +1,31 @@
+.cart-widget {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 0.3rem;
+  color: var(--color-text);
+  transition: transform 0.2s;
+}
+.cart-widget:hover {
+  transform: scale(1.1);
+  color: var(--color-accent);
+}
+
+.cart-widget__badge {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  background-color: var(--color-accent);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  font-family: var(--font-body);
+  min-width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
