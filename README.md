@@ -1,6 +1,6 @@
 # 🛒 Barber Shop Machines – E-commerce
 
-> E-commerce de máquinas de barbería desarrollado como proyecto final de la cursada de **Desarrollo Full Stack**. Aprobado con nota destacada. 🎓
+> E-commerce de máquinas de barbería desarrollado como proyecto final del módulo "React JS" en la cursada de **Desarrollo Full Stack**. Aprobado con nota destacada. 🎓
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
