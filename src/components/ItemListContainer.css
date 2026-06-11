@@ -1,6 +1,3 @@
-/* ============================================
-   ItemListContainer.css — Catálogo de productos
-   ============================================ */
 
 .catalog {
   padding: 2rem 0;
@@ -32,7 +29,6 @@
   gap: 1.5rem;
 }
 
-/* Loading state */
 .catalog__loading {
   display: flex;
   flex-direction: column;

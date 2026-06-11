@@ -1,6 +1,3 @@
-/* ============================================
-   ItemDetail.css — Vista de detalle de producto
-   ============================================ */
 
 .item-detail {
   display: flex;
@@ -65,7 +62,6 @@
   color: var(--color-text-muted);
 }
 
-/* Responsive */
 @media (max-width: 680px) {
   .item-detail {
     flex-direction: column;
